@@ -179,7 +179,7 @@ input:focus {
   color: #606060;
 }
 .staff-panel .staff-choose .selected {
-  border: 2px solid green;
+  border: 2px solid #20c52d;
 }
 .staff-panel .staff-choose .unselected {
   border: 2px solid #808080;
@@ -206,7 +206,10 @@ input:focus {
   font-size: 14px;
 }
 .booking-panel .booking-dates .selected {
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid #20c52d;
+}
+.booking-panel .booking-dates .selected span {
+  color: #20c52d;
 }
 .booking-panel .slick-container {
   box-sizing: border-box;
