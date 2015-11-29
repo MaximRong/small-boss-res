@@ -1,0 +1,194 @@
+@import "../../../common/less/base";
+
+.main {
+  width: 100%;
+}
+
+.top-panel {
+  padding: 8px 10px;
+  border-bottom: 1px solid #e5e5e5;
+  position: relative;
+
+  div {
+    margin-bottom: 5px;
+  }
+
+  .shop-name {
+    font-weight: bold;
+    font-size: 16px;
+    color: #838383;
+  }
+
+  .shop-address {
+    font-size: 14px;
+    color: #a9a9a9;
+  }
+
+  .shop-feature {
+    li {
+      float: left;
+      margin-right: 8px;
+      text-align: center;
+      padding: 2px 7px;
+      border: 1px solid #a9a9a9;
+      font-size: 12px;
+      color: #a9a9a9;
+      border-radius: 30%;
+    }
+  }
+
+  .call-phone {
+    position: absolute;
+    right: 20px;
+    top: 17px;
+    border-radius: 50%;
+    border: 2px solid #20c52d;
+    padding: 7px 8px 8px;
+
+    a {
+      color: #20c52d ;
+      font-size: 30px;
+    }
+  }
+}
+
+.staff-panel {
+  padding: 8px 10px;
+  border-bottom: 1px solid #e5e5e5;
+
+  .staff-choose {
+    li {
+      float: left;
+      margin-right: 10px;
+      border-radius: 50%;
+      position: relative;
+
+      img {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        text-align: center;
+      }
+
+      .staff-name {
+        position: absolute;
+        bottom: -25px;
+        left: 12px;
+        color: #606060;
+      }
+    }
+
+    .selected {
+      border: 2px solid green;
+    }
+
+    .unselected {
+      border: 2px solid #808080;
+    }
+  }
+
+  .staff-footer {
+    padding: 5px 0;
+    .staff-link {
+      float: right;
+      color: #5eb3d7;
+      font-size: 14px;
+    }
+  }
+
+}
+
+.booking-panel {
+  .booking-dates {
+    padding: 10px 10px 0px 10px;
+    border-bottom: 1px solid #e5e5e5;
+
+    .booking-date {
+      width: 105px;
+      text-align: center;
+      padding-bottom: 10px;
+      margin: 0 auto;
+
+      span {
+        font-size: 14px;
+      }
+    }
+
+    .selected {
+      border-bottom: 2px solid green;
+    }
+  }
+
+  .slick-container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .date-circle {
+    text-align: center;
+  }
+
+  .booking-times {
+    padding: 10px 10px;
+
+    .booking-time {
+      margin-bottom: 10px;
+
+      .canot-booking {
+        padding-bottom: 5px;
+        border-bottom: 1px solid #e5e5e5;
+        padding-left: 10px;
+
+        a {
+          display: inline-block;
+          vertical-align: middle;
+          width: 30%;
+          color: #808080;
+        }
+
+        .start-time {
+          font-size: 18px;
+        }
+
+        .end-time {
+          font-size: 14px;
+        }
+
+        .booking-state {
+          font-size: 14px;
+          text-align: right;
+        }
+      }
+
+      .can-booking {
+        padding-bottom: 5px;
+        border-bottom: 1px solid #e5e5e5;
+        padding-left: 10px;
+
+        a {
+          display: inline-block;
+          vertical-align: middle;
+          width: 30%;
+        }
+
+        .start-time {
+          font-size: 18px;
+          color: #20c52d;
+        }
+
+        .end-time {
+          font-size: 14px;
+          color: #838383;
+        }
+
+        .booking-state {
+          font-size: 14px;
+          color: #be6f74;
+          text-align: right;
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,116 @@
+html,
+body {
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+  color: #434343;
+}
+html,
+body {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+body.gray {
+  background: #f6f8fb;
+}
+html,
+body,
+div,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+span,
+em,
+img,
+ol,
+dl,
+dt,
+dd,
+p,
+a,
+figure {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  color: #434343;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  outline: none;
+}
+.over-lay,
+#over-lay,
+#over-lay-plus {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#over-lay {
+  background: transparent;
+}
+#over-lay-plus {
+  background: black;
+}
+.text-small {
+  font-size: 12px;
+}
+p {
+  font-size: 14px;
+}
+.nothing-else {
+  margin-top: 78px;
+  font-size: 18px;
+  color: #9da1ac;
+  text-align: center;
+}
+.main-color {
+  color: #ff8cb3 !important;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+input {
+  border: none;
+}
+input:focus {
+  outline: none;
+  -moz-outline-style: none;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}

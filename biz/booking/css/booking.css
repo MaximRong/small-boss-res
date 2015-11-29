@@ -1,0 +1,268 @@
+html,
+body {
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+  color: #434343;
+}
+html,
+body {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+body.gray {
+  background: #f6f8fb;
+}
+html,
+body,
+div,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+span,
+em,
+img,
+ol,
+dl,
+dt,
+dd,
+p,
+a,
+figure {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  color: #434343;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  outline: none;
+}
+.over-lay,
+#over-lay,
+#over-lay-plus {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#over-lay {
+  background: transparent;
+}
+#over-lay-plus {
+  background: black;
+}
+.text-small {
+  font-size: 12px;
+}
+p {
+  font-size: 14px;
+}
+.nothing-else {
+  margin-top: 78px;
+  font-size: 18px;
+  color: #9da1ac;
+  text-align: center;
+}
+.main-color {
+  color: #ff8cb3 !important;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+input {
+  border: none;
+}
+input:focus {
+  outline: none;
+  -moz-outline-style: none;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+.main {
+  width: 100%;
+}
+.top-panel {
+  padding: 8px 10px;
+  border-bottom: 1px solid #e5e5e5;
+  position: relative;
+}
+.top-panel div {
+  margin-bottom: 5px;
+}
+.top-panel .shop-name {
+  font-weight: bold;
+  font-size: 16px;
+  color: #838383;
+}
+.top-panel .shop-address {
+  font-size: 14px;
+  color: #a9a9a9;
+}
+.top-panel .shop-feature li {
+  float: left;
+  margin-right: 8px;
+  text-align: center;
+  padding: 2px 7px;
+  border: 1px solid #a9a9a9;
+  font-size: 12px;
+  color: #a9a9a9;
+  border-radius: 30%;
+}
+.top-panel .call-phone {
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  border-radius: 50%;
+  border: 2px solid #20c52d;
+  padding: 7px 8px 8px;
+}
+.top-panel .call-phone a {
+  color: #20c52d ;
+  font-size: 30px;
+}
+.staff-panel {
+  padding: 8px 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.staff-panel .staff-choose li {
+  float: left;
+  margin-right: 10px;
+  border-radius: 50%;
+  position: relative;
+}
+.staff-panel .staff-choose li img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  text-align: center;
+}
+.staff-panel .staff-choose li .staff-name {
+  position: absolute;
+  bottom: -25px;
+  left: 12px;
+  color: #606060;
+}
+.staff-panel .staff-choose .selected {
+  border: 2px solid green;
+}
+.staff-panel .staff-choose .unselected {
+  border: 2px solid #808080;
+}
+.staff-panel .staff-footer {
+  padding: 5px 0;
+}
+.staff-panel .staff-footer .staff-link {
+  float: right;
+  color: #5eb3d7;
+  font-size: 14px;
+}
+.booking-panel .booking-dates {
+  padding: 10px 10px 0px 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.booking-panel .booking-dates .booking-date {
+  width: 105px;
+  text-align: center;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+.booking-panel .booking-dates .booking-date span {
+  font-size: 14px;
+}
+.booking-panel .booking-dates .selected {
+  border-bottom: 2px solid green;
+}
+.booking-panel .slick-container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+}
+.booking-panel .date-circle {
+  text-align: center;
+}
+.booking-panel .booking-times {
+  padding: 10px 10px;
+}
+.booking-panel .booking-times .booking-time {
+  margin-bottom: 10px;
+}
+.booking-panel .booking-times .booking-time .canot-booking {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-left: 10px;
+}
+.booking-panel .booking-times .booking-time .canot-booking a {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30%;
+  color: #808080;
+}
+.booking-panel .booking-times .booking-time .canot-booking .start-time {
+  font-size: 18px;
+}
+.booking-panel .booking-times .booking-time .canot-booking .end-time {
+  font-size: 14px;
+}
+.booking-panel .booking-times .booking-time .canot-booking .booking-state {
+  font-size: 14px;
+  text-align: right;
+}
+.booking-panel .booking-times .booking-time .can-booking {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-left: 10px;
+}
+.booking-panel .booking-times .booking-time .can-booking a {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30%;
+}
+.booking-panel .booking-times .booking-time .can-booking .start-time {
+  font-size: 18px;
+  color: #20c52d;
+}
+.booking-panel .booking-times .booking-time .can-booking .end-time {
+  font-size: 14px;
+  color: #838383;
+}
+.booking-panel .booking-times .booking-time .can-booking .booking-state {
+  font-size: 14px;
+  color: #be6f74;
+  text-align: right;
+}
