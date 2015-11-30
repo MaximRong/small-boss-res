@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="../../../common/css/slick.css">
     <link rel="stylesheet" href="../../../common/css/slick-theme.css">
     <link rel="stylesheet" href="../../../common/css/font.css">
+    <link rel="stylesheet" href="../../../common/css/animate.css">
+    <style>
+        .block-fadeUp {
+            animation: fadeInUp 1s 1 ease both;
+        }
+
+    </style>
 </head>
 <body>
 <div class="main">
@@ -157,18 +164,50 @@
         </div>
     </div>
 
-    <div>
+    <div class="booking-block">
+        <div class="booking-inner">
+            <div class="booking-info">
+                <span class="info">时&nbsp;&nbsp;&nbsp;&nbsp;间:</span>
+                <span class="content">9:00</span>
+            </div>
 
+            <div class="booking-info">
+                <span class="info">美甲师:</span>
+                <span class="content">莫小北</span>
+            </div>
+
+            <div class="booking-info">
+                <span class="info">支付会员卡:</span>
+            </div>
+
+            <ul class="card-items clearfix">
+                <li class="card-item-selected">
+                    <div class="card-name">8折卡</div>
+                    <div class="left">剩余5000元</div>
+                </li>
+
+                <li class="card-item">
+                    <div class="card-name">5折卡</div>
+                    <div class="left">剩余3000元</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="booking-btn">确认预约</div>
     </div>
 </div>
 
 <script src="../../../common/js/jquery-2.1.1.js" charset="UTF-8"></script>
 <script src="../../../common/js/slick.js"></script>
 <script>
-    $('.slick-container').slick({
-        infinite: false,
-        slidesToShow: 3,
-        slidesToScroll: 3
+    $(function() {
+        $('.slick-container').slick({
+            infinite: false,
+            slidesToShow: 3,
+            slidesToScroll: 3
+        });
+
+        $(".booking-block").addClass("block-fadeUp").show();
     });
 </script>
 </body>

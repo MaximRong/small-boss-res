@@ -46,7 +46,7 @@
     padding: 7px 8px 8px;
 
     a {
-      color: #20c52d ;
+      color: #20c52d;
       font-size: 30px;
     }
   }
@@ -140,7 +140,7 @@
       margin-bottom: 10px;
 
       .canot-booking {
-        padding-bottom: 5px;
+        padding-bottom: 10px;
         border-bottom: 1px solid #e5e5e5;
         padding-left: 10px;
 
@@ -166,7 +166,7 @@
       }
 
       .can-booking {
-        padding-bottom: 5px;
+        padding-bottom: 10px;
         border-bottom: 1px solid #e5e5e5;
         padding-left: 10px;
 
@@ -194,5 +194,97 @@
       }
     }
 
+  }
+}
+
+.booking-block {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 11;
+  background: #ffffff;
+  border-radius: 15px 15px 0 0;
+  border-top: 1px solid #808080;
+  display: none;
+//  -webkit-animation: fadeInUp 1s 1 ease both;
+//  -o-animation: fadeInUp 1s 1 ease both;
+
+  .booking-inner {
+    padding: 30px 10px 0px 10px;
+
+    .booking-info {
+      padding: 5px;
+      span {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .info {
+        font-size: 18px;
+        color: #000000;
+        width: 30%;
+        font-weight: bold;
+      }
+
+      .content {
+        font-size: 18px;
+        color: #000000;
+        //      font-weight: bold;
+      }
+    }
+
+    .card-items {
+      padding: 5px;
+      margin-bottom: 20px;
+
+      .card-item-selected {
+        float: left;
+        padding: 5px 8px;
+        margin-right: 10px;
+        background-color: #66FF66;
+        border: 1px solid #20c52d;
+
+        .card-name {
+          padding: 4px 0px;
+          font-size: 18px;
+          color: #FF3300;
+        }
+
+        .left {
+          padding: 4px 0px;
+          font-size: 14px;
+          color: #FF3300;
+        }
+      }
+
+      .card-item {
+        float: left;
+        padding: 5px 8px;
+        margin-right: 10px;
+        border: 1px solid #808080;
+
+        .card-name {
+          padding: 4px 0px;
+          font-size: 18px;
+          color: #000000;
+        }
+
+        .left {
+          padding: 4px 0px;
+          font-size: 14px;
+          color: #000000;
+        }
+      }
+    }
+  }
+
+  .booking-btn {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #20c52d;
   }
 }
