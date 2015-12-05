@@ -1,0 +1,111 @@
+@import "../../../common/less/base";
+
+.main {
+  width: 100%;
+}
+
+.search-panel {
+  padding: 15px 10px 10px;
+
+  div {
+    float: left;
+  }
+  .search-box {
+    width: 80%;
+    input {
+      width: 95%;
+      font-size: 14px;
+      padding: 5px;
+      border: 1px solid #808080;
+    }
+  }
+
+  .search-btn {
+    height: 28px;
+    line-height: 25px;
+    margin-left: 5px;
+
+    i {
+      font-size: 24px;
+      color: #808080;
+
+      &:active {
+        color: #2A2324;
+      }
+    }
+  }
+}
+
+.members {
+  border-top: 1px solid #a9a9a9;;
+
+  .members-inner {
+
+    .member-item {
+      padding: 15px 10px;
+      border-bottom: 1px dotted #a9a9a9;
+    }
+
+    .content {
+      float: left;
+      width: 80%;
+
+      .member-photo {
+//        border: 1px solid #000000;
+        padding: 2px;
+        border-radius: 50%;
+        float: left;
+
+        img {
+          width: 55px;
+          height: 55px;
+          border-radius: 50%;
+          text-align: center;
+        }
+      }
+
+      .member-info {
+        float: left;
+        height: 60px;
+        line-height: 60px;
+        margin-left: 10px;
+
+        .name {
+          font-size: 18px;
+          font-weight: bold;
+        }
+
+        .man {
+          font-size: 16px;
+          color: #1A5DA8;
+        }
+
+        .female {
+          font-size: 16px;
+          color: #B848FF;
+        }
+      }
+
+      .line {
+        float: right;
+        padding-top: 20px;
+        div {
+          border-right: 1px solid #808080;
+          height: 20px;
+        }
+      }
+    }
+
+    .operate {
+      height: 60px;
+      line-height: 58px;
+      margin-left: 10px;
+      float: left;
+
+      a {
+        color: #20c52d;
+        font-size: 18px;
+      }
+    }
+  }
+}

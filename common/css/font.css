@@ -27,6 +27,9 @@
 .icon-phone:before {
   content: "\e601";
 }
+.icon-search:before {
+  content: "\e607";
+}
 .icon-sexmale:before {
   content: "\e602";
 }
