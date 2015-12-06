@@ -1,0 +1,218 @@
+@import "../../../common/less/base";
+
+.main {
+  width: 100%;
+}
+
+.member-panel {
+  padding: 10px 0;
+  background-color: #a9a9a9;
+
+  .member-info {
+    background-color: #ffffff;
+    overflow: hidden;
+    padding: 5px;
+
+    .member-photo {
+
+      .photo {
+        padding: 2px;
+        border-radius: 50%;
+        float: left;
+
+        img {
+          width: 55px;
+          height: 55px;
+          border-radius: 50%;
+          text-align: center;
+        }
+      }
+    }
+
+    .info {
+      float: left;
+      margin-left: 10px;
+      padding: 7px 0px;
+
+      .base-info {
+        margin-bottom: 5px;
+        span {
+          font-size: 18px;
+          color: #000000;
+        }
+
+        .man {
+          font-size: 16px;
+          color: #1a5da8;
+        }
+
+        .female {
+          font-size: 16px;
+          color: #b848ff;
+        }
+      }
+
+      .extra-info {
+        span {
+          font-size: 18px;
+          color: #000000;
+        }
+
+        a {
+          color: #20c52d;
+          font-size: 18px;
+        }
+      }
+    }
+
+  }
+}
+
+.person-main {
+  padding: 12px 10px;
+  border-bottom: 1px solid #a9a9a9;
+
+  .main-tabs {
+    li {
+      float: left;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    .selected {
+      width: 45%;
+      color: #20c52d;
+      position: relative;
+
+      .arrow-up {
+        position: absolute;
+        left: 69px;
+        bottom: 3px;
+
+        div {
+          width: 0;
+          height: 0;
+          overflow: hidden;
+          border-width: 8px;
+          border-style: dotted dotted solid;
+          position: absolute;
+        }
+
+        .arrow-a {
+          border-color: transparent transparent #a9a9a9;
+          top: -1px;
+        }
+        .arrow-b {
+          border-color: transparent transparent #ffffff;
+          top: 0;
+        }
+      }
+    }
+
+    .normal {
+    }
+  }
+}
+
+.booking-list {
+
+  .booking-item {
+    padding: 20px 10px 15px;
+    border-bottom: 1px dotted #a9a9a9;
+
+    .booking-info {
+      .booking-left{
+        width: 70%;
+
+        .staff-name {
+          span {
+            font-size: 14px;
+            display: inline-block;
+            vertical-align: middle;
+          }
+
+          .info {
+            width: 35%;
+          }
+
+        }
+
+        .booking-time {
+          margin: 10px 0px;
+
+          span {
+            font-size: 14px;
+            display: inline-block;
+            vertical-align: middle;
+          }
+
+          .info {
+            width: 35%;
+          }
+        }
+
+        .booking-state {
+          margin-bottom: 5px;
+
+          span {
+            font-size: 14px;
+            display: inline-block;
+            vertical-align: middle;
+          }
+
+          .info {
+            width: 35%;
+          }
+        }
+      }
+    }
+
+  }
+
+  .unused {
+    span {
+      color: #000000;
+    }
+  }
+
+  .invalid {
+    span {
+      color: #a9a9a9;
+    }
+  }
+}
+
+.member-operate {
+  margin-top: 30px;
+  .save-btn {
+    width: 85%;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    background-color: #20c52d;
+    border-radius: 10px;
+
+    &:active {
+      background-color: #60C559;
+    }
+  }
+
+  .delete-btn {
+    margin: 10px auto 0px;
+    width: 85%;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    background-color: #FF4400;
+    border-radius: 10px;
+
+    &:active {
+      background-color: #FF6C7A;
+    }
+  }
+}

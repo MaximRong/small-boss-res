@@ -24,11 +24,17 @@
 .icon-tianse:before {
   content: "\e600";
 }
+.icon-delete:before {
+  content: "\e608";
+}
 .icon-phone:before {
   content: "\e601";
 }
 .icon-search:before {
   content: "\e607";
+}
+.icon-huiyuan:before {
+  content: "\e609";
 }
 .icon-sexmale:before {
   content: "\e602";

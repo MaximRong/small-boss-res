@@ -4,74 +4,105 @@
   width: 100%;
 }
 
-.staff-panel {
+.staff-operate {
+  .add-staff {
+    padding: 5px 10px;
+    border-top: 1px solid #808080;
+    border-bottom: 1px solid #808080;
 
-  .info-all {
-    width: 80%;
-    float: left;
-    vertical-align: middle;
-    color: #000000;
-    font-size: 14px;
-  }
-
-  .info {
-    width: 20%;
-    float: left;
-    vertical-align: middle;
-    color: #000000;
-    font-size: 14px;
-  }
-
-  .content {
-    width: 76%;
-    float: left;
-    text-align: right;
-    color: #808080;
-    font-size: 14px;
-  }
-
-  .arrow-right {
-    float: right;
-
-    div {
-      width: 0;
-      height: 0;
-      overflow: hidden;
-      border-width: 8px;
-      border-style: dotted dotted solid;
-      position: absolute;
+    &:active {
+      background-color: #EFEDED;
     }
 
-    .arrow-a {
-      border-color: transparent transparent transparent #a9a9a9;
-      right: -1px;
+    i {
+      display: inline-block;
+      font-size: 20px;
+      color: #FF4400;
+      vertical-align: middle;
     }
-    .arrow-b {
-      border-color: transparent transparent transparent #ffffff;
-      right: 0;
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 14px;
     }
   }
+}
 
-  .item {
-    padding: 15px 10px;
-    border-bottom: 1px solid #a9a9a9;
+.staffs {
+  border-top: 1px solid #a9a9a9;;
+  margin-top: 10px;
+
+  .staffs-inner {
+    .staff-item {
+      padding: 5px 10px;
+      border-bottom: 1px dotted #a9a9a9;
+
+      &:active {
+        background-color: #EFEDED;
+      }
+    }
+
+    .content {
+      float: left;
+      width: 80%;
+
+      .staff-photo {
+        //        border: 1px solid #000000;
+        padding: 2px;
+        border-radius: 50%;
+        float: left;
+
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          text-align: center;
+        }
+      }
+
+      .staff-info {
+        float: left;
+        height: 45px;
+        line-height: 45px;
+        margin-left: 10px;
+
+        .name {
+          font-size: 18px;
+          font-weight: bold;
+        }
+
+        .man {
+          font-size: 16px;
+          color: #1A5DA8;
+        }
+
+        .female {
+          font-size: 16px;
+          color: #B848FF;
+        }
+      }
+
+      .line {
+        float: right;
+        padding-top: 10px;
+        div {
+          border-right: 1px solid #808080;
+          height: 20px;
+        }
+      }
+    }
+
+    .operate {
+      height: 40px;
+      line-height: 40px;
+      margin-left: 20px;
+      float: left;
+
+      a {
+        color: #20c52d;
+        font-size: 18px;
+      }
+    }
   }
-
-  .info-lab {
-    width: 50%;
-    float: left;
-    vertical-align: middle;
-    color: #808080;
-    font-size: 14px;
-  }
-
-  .delete {
-    float: right;
-    color: #808080;
-    font-size: 16px;
-  }
-
-  .staff-name {
-  }
-
 }
