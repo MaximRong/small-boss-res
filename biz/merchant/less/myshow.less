@@ -1,0 +1,166 @@
+@import "../../../common/less/base";
+
+.main {
+  width: 100%;
+}
+
+.show-top {
+  background-color: #333333;
+
+  .add {
+    float: right;
+    padding: 4px 10px 6px;
+
+    i {
+      color: #ffffff;
+      font-size: 18px;
+    }
+
+    &:active {
+
+      i {
+        color: #e5e5e5;
+      }
+
+    }
+  }
+}
+
+.show-main {
+  .staff-show {
+    padding: 25px 10px 10px;
+    border-bottom: 1px solid #a9a9a9;
+
+    .show-desc {
+      position: relative;
+
+      span {
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      a {
+        font-size: 14px;
+        color: #888888;
+      }
+
+      .delete {
+        position: absolute;
+        display: block;
+        right: 0px;
+        top: -5px;
+        font-size: 20px;
+        color: #888888;
+
+        &:active {
+          color: #000;
+        }
+      }
+    }
+
+    .show-photo {
+      padding: 1px;
+      margin-top: 10px;
+
+      .photo-box {
+        position: relative;
+        width: 100%; /* desired width */
+      }
+      .photo-box:before {
+        content: "";
+        display: block;
+        padding-top: 100%; /* initial ratio of 1:1*/
+      }
+
+      .photo-box-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .show-nice {
+      position: relative;
+
+      span {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 18px;
+        height: 20px;
+        line-height: 20px;
+      }
+
+      i {
+        float: right;
+        font-size: 22px;
+        height: 20px;
+        line-height: 20px;
+      }
+
+      .nice {
+        color: #ff4e00;
+      }
+
+      .nice-num {
+        float: right;
+        color: #ff4e00;
+      }
+
+      .normal-num {
+        float: right;
+      }
+    }
+
+    .nice-people {
+      padding: 5px 15px 0px;
+      margin-top: 3px;
+
+      .inner {
+        border: 1px solid #a9a9a9;
+        padding: 4px;
+        position: relative;
+
+        a {
+          font-size: 12px;
+          color: #5F5F5F;
+        }
+
+        span {
+          font-size: 12px;
+          color: #707070;
+        }
+
+        .arrow-up {
+          position: absolute;
+          right: 15px;
+          top: -16px;;
+
+          div {
+            width: 0;
+            height: 0;
+            overflow: hidden;
+            border-width: 8px;
+            border-style: dotted dotted solid;
+            position: absolute;
+          }
+
+          .arrow-a {
+            border-color: transparent transparent #a9a9a9;
+            top: -1px;
+          }
+          .arrow-b {
+            border-color: transparent transparent #ffffff;
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+}
