@@ -139,3 +139,10 @@ input:focus {
   color: #E0E0E0;
   font-size: 15px;
 }
+.bounceIn {
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+}
