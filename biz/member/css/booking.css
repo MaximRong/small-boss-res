@@ -114,8 +114,10 @@ input:focus {
 .clearfix {
   display: block;
 }
+/* close commented backslash hack */
 .main {
   width: 100%;
+  overflow: hidden;
 }
 .top-panel {
   padding: 8px 10px;
