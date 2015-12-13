@@ -1,0 +1,376 @@
+html,
+body {
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+  color: #434343;
+}
+html,
+body {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+body.gray {
+  background: #f6f8fb;
+}
+html,
+body,
+div,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+span,
+em,
+img,
+ol,
+dl,
+dt,
+dd,
+p,
+a,
+figure {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  color: #434343;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  outline: none;
+}
+.text-small {
+  font-size: 12px;
+}
+p {
+  font-size: 14px;
+}
+.nothing-else {
+  margin-top: 78px;
+  font-size: 18px;
+  color: #9da1ac;
+  text-align: center;
+}
+.main-color {
+  color: #ff8cb3 !important;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+input {
+  border: none;
+}
+input:focus {
+  outline: none;
+  -moz-outline-style: none;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+/* close commented backslash hack */
+.main {
+  width: 100%;
+  overflow: hidden;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.error {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: 2;
+  animation-direction: normal;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+}
+.error .content {
+  width: 90%;
+  margin: 0 auto;
+  padding: 3px 0px;
+}
+.error .content i {
+  font-size: 15px;
+  color: #702E42;
+  margin-right: 5px;
+}
+.error .content span {
+  color: #E0E0E0;
+  font-size: 15px;
+}
+.bounceIn {
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+}
+.often-funs {
+  overflow: hidden;
+  background-color: #47D908;
+}
+.often-funs .fun {
+  position: relative;
+  float: left;
+  width: 25%;
+}
+.often-funs .fun:active {
+  background-color: #44A31F;
+}
+.often-funs .fun:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.often-funs .content-inner {
+  position: absolute;
+  top: 15%;
+  left: 30%;
+}
+.often-funs .content-inner .icon {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.often-funs .content-inner .icon i {
+  font-size: 30px;
+  color: #ffffff;
+}
+.often-funs .content-inner .icon a {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: #DF301D;
+  border-radius: 50%;
+}
+.often-funs .content-inner .text span {
+  font-size: 14px;
+  color: #ffffff;
+}
+.less-funs {
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.less-funs .border-rm {
+  border-right: 1px dotted #808080;
+  border-bottom: 1px dotted #808080;
+}
+.less-funs .border-m {
+  border-bottom: 1px dotted #808080;
+}
+.less-funs .fun {
+  position: relative;
+  float: left;
+  width: 24.5%;
+}
+.less-funs .fun:active {
+  background-color: #e5e5e5;
+}
+.less-funs .fun:before {
+  content: "";
+  display: block;
+  padding-top: 75%;
+}
+.less-funs .content-inner {
+  position: absolute;
+  top: 12%;
+  left: 20%;
+}
+.less-funs .content-inner .icon {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.less-funs .content-inner .icon i {
+  font-size: 25px;
+  color: #000000;
+}
+.less-funs .content-inner .icon a {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: #DF301D;
+  border-radius: 50%;
+}
+.less-funs .content-inner .text span {
+  font-size: 12px;
+  color: #000000;
+}
+.staff-panel {
+  padding: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.staff-panel .my-works {
+  float: left;
+  font-size: 14px;
+}
+.staff-panel .staff-footer .staff-link {
+  float: right;
+  color: #5eb3d7;
+  font-size: 12px;
+}
+.staff-panel .staff-footer .staff-link:active {
+  color: #4496d7;
+}
+.booking-panel .booking-dates {
+  padding: 10px 10px 0px 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.booking-panel .booking-dates .booking-date {
+  width: 105px;
+  text-align: center;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+.booking-panel .booking-dates .booking-date span {
+  font-size: 14px;
+}
+.booking-panel .booking-dates .selected {
+  border-bottom: 2px solid #20c52d;
+}
+.booking-panel .booking-dates .selected span {
+  color: #20c52d;
+}
+.booking-panel .slick-container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+}
+.booking-panel .date-circle {
+  text-align: center;
+}
+.booking-panel .booking-table {
+  padding: 10px;
+  border-bottom: 1px dotted #a9a9a9;
+}
+.booking-panel .booking-table .booking-info .booking-left {
+  float: left;
+  width: 70%;
+}
+.booking-panel .booking-table .booking-info .booking-left .staff-name span {
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.booking-panel .booking-table .booking-info .booking-left .staff-name .info {
+  width: 35%;
+}
+.booking-panel .booking-table .booking-info .booking-left .staff-name a {
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #20c52d;
+}
+.booking-panel .booking-table .booking-info .booking-left .booking-time {
+  margin: 10px 0px;
+}
+.booking-panel .booking-table .booking-info .booking-left .booking-time span {
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.booking-panel .booking-table .booking-info .booking-left .booking-time .info {
+  width: 35%;
+}
+.booking-panel .booking-table .booking-info .booking-left .booking-state {
+  margin-bottom: 5px;
+}
+.booking-panel .booking-table .booking-info .booking-left .booking-state span {
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.booking-panel .booking-table .booking-info .booking-left .booking-state .info {
+  width: 35%;
+}
+.booking-panel .booking-table .booking-operate {
+  padding: 5px 0px;
+  text-align: right;
+  font-size: 12px;
+}
+.booking-panel .booking-table .booking-operate span {
+  color: #be6f74;
+}
+.booking-panel .booking-table .booking-operate span:active {
+  color: #be453d;
+}
+.booking-panel .booking-times {
+  padding: 0px 0px 10px;
+}
+.booking-panel .booking-times .booking-inner {
+  padding: 10px 10px 0px;
+}
+.booking-panel .booking-times .booking-inner .booking-item {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-left: 10px;
+}
+.booking-panel .booking-times .booking-inner .booking-item .booking-time {
+  float: left;
+  width: 35%;
+}
+.booking-panel .booking-times .booking-inner .booking-item .booking-time .start-time {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.booking-panel .booking-times .booking-inner .booking-item .booking-time .end-time {
+  font-size: 14px;
+}
+.booking-panel .booking-times .booking-inner .booking-item .booking-member {
+  height: 40px;
+  line-height: 40px;
+  width: 35%;
+  float: left;
+  font-size: 14px;
+}
+.booking-panel .booking-times .booking-inner .booking-item .booking-member a {
+  color: #20c52d;
+}
+.booking-panel .booking-times .booking-inner .booking-item .booking-state {
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  color: #be6f74;
+}
+.booking-panel .booking-times .booking-inner .booking-item .booking-state:active {
+  color: #be453d;
+}

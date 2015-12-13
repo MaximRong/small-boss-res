@@ -1,0 +1,287 @@
+html,
+body {
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+  color: #434343;
+}
+html,
+body {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+body.gray {
+  background: #f6f8fb;
+}
+html,
+body,
+div,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+span,
+em,
+img,
+ol,
+dl,
+dt,
+dd,
+p,
+a,
+figure {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  color: #434343;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  outline: none;
+}
+.text-small {
+  font-size: 12px;
+}
+p {
+  font-size: 14px;
+}
+.nothing-else {
+  margin-top: 78px;
+  font-size: 18px;
+  color: #9da1ac;
+  text-align: center;
+}
+.main-color {
+  color: #ff8cb3 !important;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+input {
+  border: none;
+}
+input:focus {
+  outline: none;
+  -moz-outline-style: none;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+/* close commented backslash hack */
+.main {
+  width: 100%;
+  overflow: hidden;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.error {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: 2;
+  animation-direction: normal;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+}
+.error .content {
+  width: 90%;
+  margin: 0 auto;
+  padding: 3px 0px;
+}
+.error .content i {
+  font-size: 15px;
+  color: #702E42;
+  margin-right: 5px;
+}
+.error .content span {
+  color: #E0E0E0;
+  font-size: 15px;
+}
+.bounceIn {
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+}
+.person-panel {
+  padding: 8px 10px;
+}
+.person-panel .person-left {
+  float: left;
+}
+.person-panel .person-left .person-photo {
+  padding: 2px;
+  border-radius: 50%;
+}
+.person-panel .person-left .person-photo img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  text-align: center;
+}
+.person-panel .person-right {
+  float: left;
+  margin-left: 10px;
+  height: 70px;
+  line-height: 70px;
+}
+.person-panel .person-right .person-name {
+  padding: 5px 0px;
+}
+.person-panel .person-right .person-name span {
+  font-weight: bold;
+  font-size: 20px;
+  color: #838383;
+}
+.person-main {
+  padding: 12px 10px;
+  border-bottom: 1px solid #a9a9a9;
+}
+.person-main .main-tabs li {
+  float: left;
+  text-align: center;
+  font-size: 16px;
+}
+.person-main .main-tabs .selected {
+  width: 45%;
+  color: #20c52d;
+  position: relative;
+}
+.person-main .main-tabs .selected .arrow-up {
+  position: absolute;
+  left: 69px;
+  bottom: 3px;
+}
+.person-main .main-tabs .selected .arrow-up div {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-width: 8px;
+  border-style: dotted dotted solid;
+  position: absolute;
+}
+.person-main .main-tabs .selected .arrow-up .arrow-a {
+  border-color: transparent transparent #a9a9a9;
+  top: -1px;
+}
+.person-main .main-tabs .selected .arrow-up .arrow-b {
+  border-color: transparent transparent #ffffff;
+  top: 0;
+}
+.booking-list .booking-item {
+  padding: 20px 10px 15px;
+  border-bottom: 1px dotted #a9a9a9;
+}
+.booking-list .booking-item .booking-info .booking-left {
+  float: left;
+  width: 70%;
+}
+.booking-list .booking-item .booking-info .booking-left .staff-name span {
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.booking-list .booking-item .booking-info .booking-left .staff-name .info {
+  width: 35%;
+}
+.booking-list .booking-item .booking-info .booking-left .booking-time {
+  margin: 10px 0px;
+}
+.booking-list .booking-item .booking-info .booking-left .booking-time span {
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.booking-list .booking-item .booking-info .booking-left .booking-time .info {
+  width: 35%;
+}
+.booking-list .booking-item .booking-info .booking-left .booking-state {
+  margin-bottom: 5px;
+}
+.booking-list .booking-item .booking-info .booking-left .booking-state span {
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.booking-list .booking-item .booking-info .booking-left .booking-state .info {
+  width: 35%;
+}
+.booking-list .booking-item .booking-info .booking-right {
+  float: left;
+  position: relative;
+  width: 30%;
+}
+.booking-list .booking-item .booking-info .booking-right .call-phone {
+  position: absolute;
+  right: 0px;
+  border-radius: 50%;
+  border: 2px solid #20c52d;
+  padding: 7px 8px 8px;
+}
+.booking-list .booking-item .booking-info .booking-right .call-phone a {
+  color: #20c52d;
+  font-size: 30px;
+}
+.booking-list .booking-item .booking-info .booking-right .call-phone:active {
+  color: #5eb3d7;
+}
+.booking-list .booking-item .booking-operate {
+  padding: 10px 0px 5px;
+  text-align: right;
+  font-size: 12px;
+}
+.booking-list .booking-item .booking-operate span {
+  color: #5eb3d7;
+}
+.booking-list .booking-item .booking-operate:active span {
+  color: #4496D7;
+}
+.booking-list .unused span {
+  color: #000000;
+}
+.booking-list .invalid span {
+  color: #a9a9a9;
+}

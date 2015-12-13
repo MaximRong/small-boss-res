@@ -1,0 +1,235 @@
+html,
+body {
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+  color: #434343;
+}
+html,
+body {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+body.gray {
+  background: #f6f8fb;
+}
+html,
+body,
+div,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+span,
+em,
+img,
+ol,
+dl,
+dt,
+dd,
+p,
+a,
+figure {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  color: #434343;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  outline: none;
+}
+.text-small {
+  font-size: 12px;
+}
+p {
+  font-size: 14px;
+}
+.nothing-else {
+  margin-top: 78px;
+  font-size: 18px;
+  color: #9da1ac;
+  text-align: center;
+}
+.main-color {
+  color: #ff8cb3 !important;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+input {
+  border: none;
+}
+input:focus {
+  outline: none;
+  -moz-outline-style: none;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+/* close commented backslash hack */
+.main {
+  width: 100%;
+  overflow: hidden;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.error {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: 2;
+  animation-direction: normal;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+}
+.error .content {
+  width: 90%;
+  margin: 0 auto;
+  padding: 3px 0px;
+}
+.error .content i {
+  font-size: 15px;
+  color: #702E42;
+  margin-right: 5px;
+}
+.error .content span {
+  color: #E0E0E0;
+  font-size: 15px;
+}
+.bounceIn {
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+}
+.staff-panel .info-all {
+  width: 80%;
+  float: left;
+  vertical-align: middle;
+  color: #000000;
+  font-size: 14px;
+}
+.staff-panel .info {
+  width: 20%;
+  float: left;
+  vertical-align: middle;
+  color: #000000;
+  font-size: 14px;
+}
+.staff-panel .content {
+  width: 76%;
+  float: left;
+  text-align: right;
+  color: #808080;
+  font-size: 14px;
+}
+.staff-panel .arrow-right {
+  float: right;
+}
+.staff-panel .arrow-right div {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-width: 8px;
+  border-style: dotted dotted solid;
+  position: absolute;
+}
+.staff-panel .arrow-right .arrow-a {
+  border-color: transparent transparent transparent #a9a9a9;
+  right: -1px;
+}
+.staff-panel .arrow-right .arrow-b {
+  border-color: transparent transparent transparent #ffffff;
+  right: 0;
+}
+.staff-panel .item {
+  padding: 15px 10px;
+  border-bottom: 1px solid #a9a9a9;
+}
+.staff-panel .info-lab {
+  width: 50%;
+  float: left;
+  vertical-align: middle;
+  color: #808080;
+  font-size: 14px;
+}
+.staff-panel .delete {
+  float: right;
+  color: #808080;
+  font-size: 16px;
+}
+.staff-operate {
+  margin-top: 30px;
+}
+.staff-operate .save-btn {
+  width: 85%;
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  background-color: #20c52d;
+  border-radius: 10px;
+}
+.staff-operate .save-btn:active {
+  background-color: #60C559;
+}
+.staff-operate .delete-btn {
+  margin: 10px auto 0px;
+  width: 85%;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  background-color: #FF4400;
+  border-radius: 10px;
+}
+.staff-operate .delete-btn:active {
+  background-color: #FF6C7A;
+}

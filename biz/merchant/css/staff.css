@@ -1,0 +1,229 @@
+html,
+body {
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+  color: #434343;
+}
+html,
+body {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+body.gray {
+  background: #f6f8fb;
+}
+html,
+body,
+div,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+span,
+em,
+img,
+ol,
+dl,
+dt,
+dd,
+p,
+a,
+figure {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  color: #434343;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  outline: none;
+}
+.text-small {
+  font-size: 12px;
+}
+p {
+  font-size: 14px;
+}
+.nothing-else {
+  margin-top: 78px;
+  font-size: 18px;
+  color: #9da1ac;
+  text-align: center;
+}
+.main-color {
+  color: #ff8cb3 !important;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+input {
+  border: none;
+}
+input:focus {
+  outline: none;
+  -moz-outline-style: none;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+/* close commented backslash hack */
+.main {
+  width: 100%;
+  overflow: hidden;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.error {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: 2;
+  animation-direction: normal;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+}
+.error .content {
+  width: 90%;
+  margin: 0 auto;
+  padding: 3px 0px;
+}
+.error .content i {
+  font-size: 15px;
+  color: #702E42;
+  margin-right: 5px;
+}
+.error .content span {
+  color: #E0E0E0;
+  font-size: 15px;
+}
+.bounceIn {
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+}
+.staff-operate .add-staff {
+  padding: 5px 10px;
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+}
+.staff-operate .add-staff:active {
+  background-color: #EFEDED;
+}
+.staff-operate .add-staff i {
+  display: inline-block;
+  font-size: 20px;
+  color: #FF4400;
+  vertical-align: middle;
+}
+.staff-operate .add-staff span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+}
+.staffs {
+  border-top: 1px solid #a9a9a9;
+  margin-top: 10px;
+}
+.staffs .staffs-inner .staff-item {
+  padding: 5px 10px;
+  border-bottom: 1px dotted #a9a9a9;
+}
+.staffs .staffs-inner .staff-item:active {
+  background-color: #EFEDED;
+}
+.staffs .staffs-inner .content {
+  float: left;
+  width: 80%;
+}
+.staffs .staffs-inner .content .staff-photo {
+  padding: 2px;
+  border-radius: 50%;
+  float: left;
+}
+.staffs .staffs-inner .content .staff-photo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+}
+.staffs .staffs-inner .content .staff-info {
+  float: left;
+  height: 45px;
+  line-height: 45px;
+  margin-left: 10px;
+}
+.staffs .staffs-inner .content .staff-info .name {
+  font-size: 18px;
+  font-weight: bold;
+}
+.staffs .staffs-inner .content .staff-info .man {
+  font-size: 16px;
+  color: #1A5DA8;
+}
+.staffs .staffs-inner .content .staff-info .female {
+  font-size: 16px;
+  color: #B848FF;
+}
+.staffs .staffs-inner .content .line {
+  float: right;
+  padding-top: 10px;
+}
+.staffs .staffs-inner .content .line div {
+  border-right: 1px solid #808080;
+  height: 20px;
+}
+.staffs .staffs-inner .operate {
+  height: 40px;
+  line-height: 40px;
+  margin-left: 20px;
+  float: left;
+}
+.staffs .staffs-inner .operate a {
+  color: #20c52d;
+  font-size: 18px;
+}

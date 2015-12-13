@@ -1,0 +1,268 @@
+html,
+body {
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+  color: #434343;
+}
+html,
+body {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+body.gray {
+  background: #f6f8fb;
+}
+html,
+body,
+div,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+span,
+em,
+img,
+ol,
+dl,
+dt,
+dd,
+p,
+a,
+figure {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  color: #434343;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  outline: none;
+}
+.text-small {
+  font-size: 12px;
+}
+p {
+  font-size: 14px;
+}
+.nothing-else {
+  margin-top: 78px;
+  font-size: 18px;
+  color: #9da1ac;
+  text-align: center;
+}
+.main-color {
+  color: #ff8cb3 !important;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+input {
+  border: none;
+}
+input:focus {
+  outline: none;
+  -moz-outline-style: none;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+/* close commented backslash hack */
+.main {
+  width: 100%;
+  overflow: hidden;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.error {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: 2;
+  animation-direction: normal;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+}
+.error .content {
+  width: 90%;
+  margin: 0 auto;
+  padding: 3px 0px;
+}
+.error .content i {
+  font-size: 15px;
+  color: #702E42;
+  margin-right: 5px;
+}
+.error .content span {
+  color: #E0E0E0;
+  font-size: 15px;
+}
+.bounceIn {
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+}
+.search-panel {
+  padding: 15px 10px 10px;
+}
+.search-panel div {
+  float: left;
+}
+.search-panel .search-box {
+  width: 80%;
+}
+.search-panel .search-box input {
+  width: 95%;
+  font-size: 14px;
+  padding: 5px;
+  border: 1px solid #808080;
+}
+.search-panel .search-btn {
+  height: 28px;
+  line-height: 25px;
+  margin-left: 5px;
+}
+.search-panel .search-btn i {
+  font-size: 24px;
+  color: #808080;
+}
+.search-panel .search-btn i:active {
+  color: #2A2324;
+}
+.member-operate .add-member {
+  padding: 5px 10px;
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+}
+.member-operate .add-member:active {
+  background-color: #EFEDED;
+}
+.member-operate .add-member i {
+  display: inline-block;
+  font-size: 20px;
+  color: #FF4400;
+  vertical-align: middle;
+}
+.member-operate .add-member span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+}
+.member-operate .add-member a {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  background-color: #FF4400;
+  text-align: center;
+  height: 18px;
+  line-height: 18px;
+  width: 18px;
+  font-size: 12px;
+  color: #fff;
+}
+.members {
+  border-top: 1px solid #a9a9a9;
+  margin-top: 10px;
+}
+.members .members-inner .member-item {
+  padding: 5px 10px;
+  border-bottom: 1px dotted #a9a9a9;
+}
+.members .members-inner .member-item:active {
+  background-color: #EFEDED;
+}
+.members .members-inner .content {
+  float: left;
+  width: 80%;
+}
+.members .members-inner .content .member-photo {
+  padding: 2px;
+  border-radius: 50%;
+  float: left;
+}
+.members .members-inner .content .member-photo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+}
+.members .members-inner .content .member-info {
+  float: left;
+  height: 45px;
+  line-height: 45px;
+  margin-left: 10px;
+}
+.members .members-inner .content .member-info .name {
+  font-size: 18px;
+  font-weight: bold;
+}
+.members .members-inner .content .member-info .man {
+  font-size: 16px;
+  color: #1A5DA8;
+}
+.members .members-inner .content .member-info .female {
+  font-size: 16px;
+  color: #B848FF;
+}
+.members .members-inner .content .line {
+  float: right;
+  padding-top: 10px;
+}
+.members .members-inner .content .line div {
+  border-right: 1px solid #808080;
+  height: 20px;
+}
+.members .members-inner .operate {
+  height: 40px;
+  line-height: 40px;
+  margin-left: 20px;
+  float: left;
+}
+.members .members-inner .operate a {
+  color: #20c52d;
+  font-size: 18px;
+}
