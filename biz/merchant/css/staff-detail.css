@@ -272,6 +272,16 @@ input:focus {
   font-size: 18px;
   color: #808080;
 }
+.input-block .selected-input div {
+  height: 20px;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  color: #808080;
+}
+.input-block .selected-input .selected {
+  background-color: #52DD8A;
+}
 .input-block .operate {
   position: absolute;
   bottom: 10%;
