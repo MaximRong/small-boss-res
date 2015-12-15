@@ -213,10 +213,13 @@ input:focus {
   text-align: center;
   height: 40px;
   line-height: 40px;
-  background-color: #20c52d;
   border-radius: 10px;
+  background-color: #6C716D;
 }
-.staff-operate .save-btn:active {
+.staff-operate .active {
+  background-color: #20c52d;
+}
+.staff-operate .active:active {
   background-color: #60c559;
 }
 .staff-operate .delete-btn {
