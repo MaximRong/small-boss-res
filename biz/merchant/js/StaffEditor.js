@@ -96,7 +96,7 @@ $(function () {
 
     $(".staff-operate").delegate(".active", "click", function () {
         var data = {
-            staffName: $(".staff-name > .content").data("val") || "",
+            name: $(".staff-name > .content").data("val") || "",
             sex: $("#sex > .content").data("val") || "",
             mobile: $("#mobile > .content").data("val") || "",
             desc: $("#desc > .content").data("val") || "",
@@ -108,10 +108,13 @@ $(function () {
         $.ajax({
             type: "POST",
             contentType: 'application/json;charset=UTF-8',
-            url: "/boss/merchant/staff/save",
+            url: context + "/merchant/staff/save",
             data: JSON.stringify(data),
             success: function (ret) {
-                console.log(ret);
+                console.log(ret.result);
+                if("ok" == ret.result) {
+                    location.url = context + "/merchant/staff/list";
+                }
             }
         });
     });
