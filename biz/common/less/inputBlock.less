@@ -1,0 +1,104 @@
+.input-block {
+  width: 90%;
+  height: 30%;
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  z-index: 11;
+  border-radius: 15px 15px 0 0;
+  border-top: 1px solid #808080;
+  overflow: hidden;
+  padding: 5% 5% 0;
+
+  .tip {
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .text-input {
+    width: 80%;
+    position: relative;
+    border: 0px solid #878787;
+    border-bottom-width: 1px;
+    margin: 0 auto;
+
+
+    input {
+      width: 80%;
+      color: #808080;
+      font-size: 14px;
+      padding: 0px 5% 5px 5px;
+    }
+
+    .delete {
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+
+      i {
+        font-size: 18px;
+        color: #808080;
+      }
+    }
+  }
+
+  .selected-input {
+
+    div {
+      height: 20px;
+      text-align: center;
+      padding: 10px;
+      font-size: 20px;
+      color: #808080;
+    }
+
+    .selected {
+      //      border-bottom: 1px solid #080808;
+      background-color: #52DD8A;
+    }
+  }
+
+  .operate {
+    position: absolute;
+    bottom: 10%;
+    width: 90%;
+
+    .content {
+      width: 80%;
+      margin: 0 auto;
+
+      .save {
+        float: left;
+        background-color: #20c52d;
+        border-radius: 10px;
+        width: 40%;
+        color: #ffffff;
+        font-size: 18px;
+        text-align: center;
+        padding: 5px 0;
+        border: 1px solid #d7d7d7;
+
+        &:active {
+          background-color: #60c559;
+        }
+      }
+
+      .cancel {
+        float: right;
+        background-color: #ff4400;
+        border-radius: 10px;
+        width: 40%;
+        color: #ffffff;
+        font-size: 18px;
+        text-align: center;
+        padding: 5px 0;
+        border: 1px solid #d7d7d7;
+
+        &:active {
+          background-color: #ff6c7a;
+        }
+      }
+    }
+  }
+}
