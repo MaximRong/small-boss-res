@@ -121,6 +121,7 @@ input:focus {
   padding: 8px 10px;
   border-bottom: 1px solid #e5e5e5;
   position: relative;
+  min-height: 65px;
 }
 .top-panel div {
   margin-bottom: 5px;
@@ -194,6 +195,9 @@ input:focus {
 }
 .staff-panel .staff-footer .staff-link:active {
   color: #4496d7;
+}
+.booking-panel {
+  padding-bottom: 80px;
 }
 .booking-panel .booking-dates {
   padding: 10px 10px 0px 10px;
