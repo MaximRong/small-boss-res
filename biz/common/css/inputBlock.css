@@ -1,0 +1,120 @@
+.input-block {
+  width: 90%;
+  height: 30%;
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  z-index: 11;
+  border-radius: 15px 15px 0 0;
+  border-top: 1px solid #808080;
+  overflow: hidden;
+  padding: 5% 5% 0;
+}
+.input-block .tip {
+  color: #000000;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.input-block .text-input {
+  width: 80%;
+  position: relative;
+  border: 0px solid #878787;
+  border-bottom-width: 1px;
+  margin: 0 auto;
+}
+.input-block .text-input input {
+  width: 80%;
+  color: #808080;
+  font-size: 14px;
+  padding: 0px 5% 5px 5px;
+}
+.input-block .text-input .delete {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.input-block .text-input .delete i {
+  font-size: 18px;
+  color: #808080;
+}
+.input-block .selected-input div {
+  height: 20px;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  color: #808080;
+}
+.input-block .selected-input .selected {
+  background-color: #52DD8A;
+}
+.input-block .operate {
+  position: absolute;
+  bottom: 10%;
+  width: 90%;
+}
+.input-block .operate .input-content {
+  width: 80%;
+  margin: 0 auto;
+}
+.input-block .operate .input-content .save {
+  float: left;
+  background-color: #20c52d;
+  border-radius: 10px;
+  width: 40%;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px 0;
+  border: 1px solid #d7d7d7;
+}
+.input-block .operate .input-content .save:active {
+  background-color: #60c559;
+}
+.input-block .operate .input-content .cancel {
+  float: right;
+  background-color: #ff4400;
+  border-radius: 10px;
+  width: 40%;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px 0;
+  border: 1px solid #d7d7d7;
+}
+.input-block .operate .input-content .cancel:active {
+  background-color: #ff6c7a;
+}
+.block-fadeUp {
+  animation: fadeInUp 0.3s 1 ease both;
+}
+.error {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.error .error-content {
+  width: 90%;
+  margin: 0 auto;
+  padding: 3px 0px;
+}
+.error .error-content i {
+  font-size: 15px;
+  color: #702E42;
+  margin-right: 5px;
+}
+.error .error-content span {
+  color: #E0E0E0;
+  font-size: 15px;
+}
+.error-pulse {
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: 2;
+  animation-direction: normal;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+}

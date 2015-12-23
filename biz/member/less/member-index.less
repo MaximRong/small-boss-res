@@ -1,0 +1,298 @@
+@import "../../../common/less/base";
+
+.often-funs {
+  overflow: hidden;
+  background-color: #47D908;
+
+  .fun{
+    position: relative;
+    float: left;
+    width: 25%;
+
+    &:active {
+      background-color: #44A31F;
+    }
+
+  }
+  .fun:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+
+  .content-inner {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+
+    .icon {
+      text-align: center;
+      margin-bottom: 5px;
+
+      i {
+        font-size: 30px;
+        color: #ffffff;
+      }
+
+      a {
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        background: #DF301D;
+        border-radius: 50%;
+      }
+    }
+
+    .text {
+      span {
+        font-size: 14px;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.less-funs {
+  overflow: hidden;
+  background-color: #ffffff;
+
+  .border-rm {
+    border-right: 1px dotted #808080;
+    border-bottom: 1px dotted #808080;
+  }
+
+  .border-m {
+    border-bottom: 1px dotted #808080;
+  }
+
+  .fun{
+    position: relative;
+    float: left;
+    width: 24.5%;
+
+    &:active {
+      background-color: #e5e5e5;
+    }
+  }
+
+  .fun:before{
+    content: "";
+    display: block;
+    padding-top: 75%;
+  }
+
+  .content-inner {
+    position: absolute;
+    top: 12%;
+    left: 20%;
+
+    .icon {
+      text-align: center;
+      margin-bottom: 5px;
+
+      i {
+        font-size: 25px;
+        color: #000000;
+      }
+
+      a {
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        background: #DF301D;
+        border-radius: 50%;
+      }
+    }
+
+    .text {
+      span {
+        font-size: 12px;
+        color: #000000;
+      }
+    }
+  }
+}
+
+
+.staff-panel {
+  padding: 10px;
+  border-bottom: 1px solid #e5e5e5;
+
+  .my-works {
+    float: left;
+    font-size: 14px;
+  }
+
+  .staff-footer {
+    .staff-link {
+      float: right;
+      color: #5eb3d7;
+      font-size: 12px;
+
+      &:active {
+        color: #4496d7;
+      }
+    }
+  }
+}
+
+.booking-panel {
+  .booking-dates {
+    padding: 10px 10px 0px 10px;
+    border-bottom: 1px solid #e5e5e5;
+
+    .booking-date {
+      width: 105px;
+      text-align: center;
+      padding-bottom: 10px;
+      margin: 0 auto;
+
+      span {
+        font-size: 14px;
+      }
+    }
+
+    .selected {
+      border-bottom: 2px solid #20c52d;
+
+      span {
+        color: #20c52d;
+      }
+    }
+  }
+
+  .slick-container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .date-circle {
+    text-align: center;
+  }
+
+  .booking-table {
+    padding: 10px;
+    border-bottom: 1px dotted #a9a9a9;
+
+    .booking-info {
+      .booking-left {
+        float: left;
+        width: 70%;
+
+        .staff-name {
+          span {
+            font-size: 14px;
+            display: inline-block;
+            vertical-align: middle;
+          }
+
+          .info {
+            width: 35%;
+          }
+
+          a {
+            font-size: 14px;
+            display: inline-block;
+            vertical-align: middle;
+            color: #20c52d;
+          }
+
+        }
+
+        .booking-time {
+          margin: 10px 0px;
+
+          span {
+            font-size: 14px;
+            display: inline-block;
+            vertical-align: middle;
+          }
+
+          .info {
+            width: 35%;
+          }
+        }
+
+        .booking-state {
+          margin-bottom: 5px;
+
+          span {
+            font-size: 14px;
+            display: inline-block;
+            vertical-align: middle;
+          }
+
+          .info {
+            width: 35%;
+          }
+        }
+      }
+    }
+
+    .booking-operate {
+      padding: 5px 0px;
+      text-align: right;
+      font-size: 12px;
+
+      span {
+        color: #be6f74;
+
+        &:active {
+          color: #be453d;
+        }
+      }
+    }
+  }
+
+  .booking-times {
+    padding: 0px 0px 10px;
+
+    .booking-inner {
+      padding: 10px 10px 0px;
+
+      .booking-item {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #e5e5e5;
+        padding-left: 10px;
+
+        .booking-time {
+          float: left;
+          width: 35%;
+          .start-time {
+            font-size: 18px;
+            margin-bottom: 5px;
+          }
+
+          .end-time {
+            font-size: 14px;
+          }
+        }
+
+        .booking-member {
+          height: 40px;
+          line-height: 40px;
+          width: 35%;
+          float: left;
+          font-size: 14px;
+
+          a {
+            color: #20c52d;
+          }
+        }
+
+        .booking-state {
+          height: 40px;
+          line-height: 40px;
+          font-size: 14px;
+          color: #be6f74;
+
+          &:active {
+            color: #be453d;
+          }
+        }
+      }
+    }
+
+  }
+}

@@ -117,61 +117,96 @@ input:focus {
   animation-fill-mode: both;
   animation-delay: 0s;
 }
-.main {
-  width: 100%;
-  overflow: hidden;
-}
-.login {
-  width: 90%;
-  margin: 0 auto;
-  padding-top: 35%;
-}
-.login .inner {
-  padding: 30px 10px;
-  background-color: #fcfcfc;
-  border: 1px dotted #e5e5e5;
-}
-.login .inner .item {
-  margin-bottom: 10px;
-}
-.login .inner .item span {
-  display: inline-block;
-  width: 15%;
+.member-panel .info-all {
+  width: 80%;
+  float: left;
+  vertical-align: middle;
+  color: #000000;
   font-size: 14px;
 }
-.login .inner .item input {
-  border: 0px solid #878787;
-  border-bottom-width: 1px;
+.member-panel .info {
+  width: 20%;
+  float: left;
+  vertical-align: middle;
+  color: #000000;
+  font-size: 14px;
+}
+.member-panel .content {
+  width: 76%;
+  float: left;
+  text-align: right;
+  color: #808080;
+  font-size: 14px;
+}
+.member-panel .arrow-right {
+  float: right;
+}
+.member-panel .arrow-right div {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-width: 8px;
+  border-style: dotted dotted solid;
+  position: absolute;
+}
+.member-panel .arrow-right .arrow-a {
+  border-color: transparent transparent transparent #a9a9a9;
+  right: -1px;
+}
+.member-panel .arrow-right .arrow-b {
+  border-color: transparent transparent transparent #ffffff;
+  right: 0;
+}
+.member-panel .item {
+  padding: 15px 10px;
+  border-bottom: 1px solid #a9a9a9;
+}
+.member-panel .info-lab {
+  width: 50%;
+  float: left;
+  vertical-align: middle;
+  color: #808080;
+  font-size: 14px;
+}
+.member-panel .delete {
+  float: right;
+  color: #808080;
   font-size: 16px;
-  padding: 2px 5px;
 }
-.login-operate {
+.member-operate {
   margin-top: 30px;
-  width: 90%;
-  padding: 0px 30px;
 }
-.login-operate .login-btn {
-  display: inline-block;
-  width: 40%;
+.member-operate .save-btn {
+  width: 85%;
+  margin: 0 auto;
   color: #ffffff;
   font-size: 20px;
   text-align: center;
   height: 40px;
   line-height: 40px;
   border-radius: 10px;
-  background-color: #6c716d;
+  background-color: #6C716D;
 }
-.login-operate .active {
+.member-operate .active {
   background-color: #20c52d;
 }
-.login-operate .active:active {
+.member-operate .active:active {
   background-color: #60c559;
 }
-.login-operate a {
-  margin-left: 5%;
-  color: #5eb3d7;
-  font-size: 14px;
+.member-operate .delete-btn {
+  margin: 10px auto 0px;
+  width: 85%;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  background-color: #ff4400;
+  border-radius: 10px;
 }
-.login-operate a:active {
-  color: #4496d7;
+.member-operate .delete-btn:active {
+  background-color: #ff6c7a;
+}
+.block-fadeUp {
+  animation: fadeInUp 0.3s 1 ease both;
 }
