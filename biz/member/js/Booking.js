@@ -39,8 +39,10 @@ $(function () {
              type: "POST",
              data: data,
              dataType: "json",
-             success : function (data) {
-                 alert("预订成功");
+             success : function (ret) {
+                 if("ok" == ret.result) {
+                     window.location.href = context + "/member/subscribe/show";
+                 }
              }
          });
     });
