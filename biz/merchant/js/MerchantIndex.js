@@ -18,8 +18,29 @@ $(function () {
         $this.data("style", isTable ? "data" : "table");
         $(".table-style").toggle(isTable);
         $(".date-style").toggle(!isTable);
-        if ("table" == style) {
+    });
 
-        }
-    })
+    $(".date-circle > .booking-date").click(function () {
+        $(".date-circle > .booking-date").removeClass("selected");
+        var day = $(this).data("day");
+        $(this).addClass("selected")
+        $(".booking-inner").hide();
+        $(".booking-inner").filter(function(index) {
+            return $(this).data("date") == day;
+        }).show();
+    });
+
+    $(".cancel-booking-fake").click(function() {
+        $.ajax({
+            url: context + "/merchant/home/cancel",
+            type: "POST",
+            data: {"subscribeId": $(this).data("val")},
+            dataType: "json",
+            success : function (ret) {
+                if("ok" == ret.result) {
+                    window.location.href = context + "/merchant/home/show";
+                }
+            }
+        });
+    });
 });

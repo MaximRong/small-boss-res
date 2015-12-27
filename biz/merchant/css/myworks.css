@@ -270,6 +270,12 @@ input:focus {
 .booking-panel .booking-times .booking-inner .booking-item .booking-member a {
   color: #20c52d;
 }
+.booking-panel .booking-times .booking-inner .booking-item .cancel-state {
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  color: #808080;
+}
 .booking-panel .booking-times .booking-inner .booking-item .booking-state {
   height: 40px;
   line-height: 40px;
