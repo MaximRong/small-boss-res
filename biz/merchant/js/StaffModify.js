@@ -1,8 +1,8 @@
 /**
- * Created by Maxim on 2015/12/19.
+ * Created by Maxim on 2015/12/15.
  */
 $(function () {
-    $(".member-name").click(function () {
+    $(".staff-name").click(function () {
         var $this = $(this);
         $.inputBlock({
             elem: $this,
@@ -28,6 +28,7 @@ $(function () {
         });
     });
 
+/*
     $("#mobile").click(function () {
         var $this = $(this);
         $.inputBlock({
@@ -40,82 +41,85 @@ $(function () {
             }
         });
     });
+*/
 
-    $("#password").click(function () {
+    $("#desc").click(function () {
         var $this = $(this);
         $.inputBlock({
             elem: $this,
             type: "input",
-            tip: "密码",
-            maxlength: 12,
+            tip: "简介",
+            maxlength: 20,
             save: function (value) {
-                $this.find(".content").data("val", value).text(value.replace(/(\w)/g, "*"));
-                $(".error").hide();
+                $this.find(".content").data("val", value).text(value);
             }
         });
     });
 
-    $("#reRassword").click(function () {
+    $("#tags").click(function () {
+        var length = $("#tag-items > .item").length;
+        if (3 <= length) return;
+
         var $this = $(this);
         $.inputBlock({
             elem: $this,
             type: "input",
-            tip: "再次输入密码",
-            maxlength: 12,
+            tip: "标签",
+            maxlength: 5,
             save: function (value) {
-                $this.find(".content").data("val", value).text(value.replace(/(\w)/g, "*"));
-                $(".error").hide();
+                var tag = "<div class=\"item clearfix\">";
+                tag += "<span class=\"info-lab\" data-val=\"" + value + "\">" + value + "</span>";
+                tag += "<i class=\"delete iconfont\">&#xe608;</i>";
+                tag += "</div>";
+
+                $("#tag-items").append(tag);
             }
         });
     });
 
+    $("#tag-items").delegate(".item", "click", function () {
+        $(this).remove();
+    });
 
-    var validMemberParam = function () {
-        var name = $(".member-name > .content").data("val") || "";
-        var mobile = $("#mobile > .content").data("val") || "";
+    var validStaffParam = function () {
+        var name = $(".staff-name > .content").data("val") || "";
         var sex = $("#sex > .content").data("val") + "" || "";
-        var password = $("#password > .content").data("val") || "";
-        var reRassword = $("#reRassword > .content").data("val") || "";
+        var desc = $("#desc > .content").data("val") || "";
 
-//        console.log(" name:" + name + " mobile:" + mobile + " sex : " + sex + " password:" + password + " reRassword:" + reRassword);
-
-        if("" == name || "" == mobile || "" == sex || "" == password || "" == reRassword) {
+        if("" == name || "" ==  sex || "" == desc) {
             $(".save-btn").removeClass("active");
             return;
         }
         $(".save-btn").addClass("active");
     };
 
-    setInterval(validMemberParam, 500);
+    setInterval(validStaffParam, 500);
 
-    $(".member-operate").delegate(".active", "click", function () {
-        var password = $("#password > .content").data("val") || "";
-        var reRassword = $("#reRassword > .content").data("val") || "";
-
-        if(password != reRassword) {
-            $.inputError("两次密码输入的不一致");
-            return;
-        }
-
+    $(".staff-operate").delegate(".active", "click", function () {
         var data = {
-            name: $(".member-name > .content").data("val") || "",
-            mobile: $("#mobile > .content").data("val") || "",
+            staffId : $("#staffId").val(),
+            userId : $("#userId").val(),
+            name: $(".staff-name > .content").data("val") || "",
             sex: $("#sex > .content").data("val") || "",
-            password : $("#password > .content").data("val") || ""
+            desc: $("#desc > .content").data("val") || "",
+            tag1: $(".info-lab")[0] ? $($(".info-lab")[0]).data("val") : "",
+            tag2: $(".info-lab")[1] ? $($(".info-lab")[1]).data("val") : "",
+            tag3: $(".info-lab")[2] ? $($(".info-lab")[2]).data("val") : ""
         };
 
         $.ajax({
             type: "POST",
             contentType: 'application/json;charset=UTF-8',
-            url: context + "/member/register/register",
+            url: context + "/merchant/staff/modify",
             data: JSON.stringify(data),
             success: function (ret) {
                 if("ok" == ret.result) {
-                    window.location.href = context + "/merchant/member/show";
+                    window.location.href = context + "/merchant/home/show";
                 } else {
                     $.inputError(ret.msg);
                 }
             }
         });
     });
+
 });

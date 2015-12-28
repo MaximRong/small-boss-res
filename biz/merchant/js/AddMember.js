@@ -1,5 +1,5 @@
 /**
- * Created by Maxim on 2015/12/19.
+ * Created by Maxim on 2015/12/15.
  */
 $(function () {
     $(".member-name").click(function () {
@@ -72,12 +72,10 @@ $(function () {
 
     var validMemberParam = function () {
         var name = $(".member-name > .content").data("val") || "";
-        var mobile = $("#mobile > .content").data("val") || "";
         var sex = $("#sex > .content").data("val") + "" || "";
+        var mobile = $("#mobile > .content").data("val") || "";
         var password = $("#password > .content").data("val") || "";
         var reRassword = $("#reRassword > .content").data("val") || "";
-
-//        console.log(" name:" + name + " mobile:" + mobile + " sex : " + sex + " password:" + password + " reRassword:" + reRassword);
 
         if("" == name || "" == mobile || "" == sex || "" == password || "" == reRassword) {
             $(".save-btn").removeClass("active");
@@ -99,23 +97,22 @@ $(function () {
 
         var data = {
             name: $(".member-name > .content").data("val") || "",
-            mobile: $("#mobile > .content").data("val") || "",
             sex: $("#sex > .content").data("val") || "",
+            mobile: $("#mobile > .content").data("val") || "",
             password : $("#password > .content").data("val") || ""
         };
 
         $.ajax({
             type: "POST",
             contentType: 'application/json;charset=UTF-8',
-            url: context + "/member/register/register",
+            url: context + "/merchant/member/add",
             data: JSON.stringify(data),
             success: function (ret) {
                 if("ok" == ret.result) {
                     window.location.href = context + "/merchant/member/show";
-                } else {
-                    $.inputError(ret.msg);
                 }
             }
         });
     });
+
 });
