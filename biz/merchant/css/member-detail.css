@@ -119,7 +119,6 @@ input:focus {
 }
 .member-panel {
   padding: 10px 0;
-  background-color: #a9a9a9;
 }
 .member-panel .member-info {
   background-color: #ffffff;
@@ -245,6 +244,7 @@ input:focus {
 }
 .member-operate {
   margin-top: 30px;
+  padding-bottom: 80px;
 }
 .member-operate .save-btn {
   width: 85%;
