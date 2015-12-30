@@ -1,0 +1,167 @@
+@import "../../../common/less/base";
+
+.search-panel {
+  padding: 15px 10px 10px;
+
+  div {
+    float: left;
+  }
+  .search-box {
+    width: 80%;
+    input {
+      width: 95%;
+      font-size: 14px;
+      padding: 5px;
+      border: 1px solid #808080;
+    }
+  }
+
+  .search-btn {
+    height: 28px;
+    line-height: 25px;
+    margin-left: 5px;
+
+    i {
+      font-size: 24px;
+      color: #808080;
+
+      &:active {
+        color: #2a2324;
+      }
+    }
+  }
+}
+
+.member-operate {
+  .add-member {
+    padding: 5px 10px;
+    border-top: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+
+    &:active {
+      background-color: #efeded;
+    }
+
+    i {
+      display: inline-block;
+      font-size: 20px;
+      color: #ff4400;
+      vertical-align: middle;
+    }
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 14px;
+    }
+
+    a {
+      display: inline-block;
+      vertical-align: middle;
+      border-radius: 50%;
+      background-color: #ff4400;
+      text-align: center;
+      height: 18px;
+      line-height: 18px;
+      width: 18px;
+      font-size: 12px;
+      color: #ffffff;
+    }
+  }
+}
+
+.members {
+  border-top: 1px solid #a9a9a9;;
+  margin-top: 10px;
+
+  .members-inner {
+    .member-item {
+      padding: 5px 10px;
+      border-bottom: 1px dotted #a9a9a9;
+
+      &:active {
+        background-color: #efeded;
+      }
+    }
+
+    .content {
+      float: left;
+      width: 65%;
+
+      .member-photo {
+        //        border: 1px solid #000000;
+        padding: 2px;
+        border-radius: 50%;
+        float: left;
+
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          text-align: center;
+        }
+      }
+
+      .member-info {
+        float: left;
+        height: 45px;
+        line-height: 45px;
+        margin-left: 10px;
+
+        .name {
+          font-size: 18px;
+          font-weight: bold;
+        }
+
+        .man {
+          font-size: 16px;
+          color: #1a5da8;
+        }
+
+        .female {
+          font-size: 16px;
+          color: #b848ff;
+        }
+
+        a {
+          color: #20c52d;
+          font-size: 18px;
+        }
+      }
+
+      .line {
+        float: right;
+        padding-top: 10px;
+        div {
+          border-right: 1px solid #808080;
+          height: 20px;
+        }
+      }
+    }
+
+    .operate {
+      height: 40px;
+      line-height: 40px;
+      margin-left: 20px;
+      float: left;
+
+      .pass {
+        color: #20c52d;
+      }
+
+      .refuse {
+        margin-left: 15px;
+        font-size: 12px;
+        color: #8a8a8a;
+      }
+    }
+  }
+
+  .no-members {
+    width: 80%;
+    margin: 0 auto;
+    font-weight: bold;
+    padding-top: 100px;
+    text-align: center;
+  }
+}
