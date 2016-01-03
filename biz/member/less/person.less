@@ -2,7 +2,7 @@
 
 .person-panel {
   padding: 8px 10px;
-//  border-bottom: 1px solid #a9a9a9;
+  //  border-bottom: 1px solid #a9a9a9;
 
   .person-left {
     float: left;
@@ -85,13 +85,14 @@
 }
 
 .booking-list {
+  padding-bottom: 80px;
 
   .booking-item {
     padding: 20px 10px 15px;
     border-bottom: 1px dotted #a9a9a9;
 
     .booking-info {
-      .booking-left{
+      .booking-left {
         float: left;
         width: 70%;
 
@@ -161,7 +162,6 @@
       }
     }
 
-
     .booking-operate {
       padding: 10px 0px 5px;
       text-align: right;
@@ -173,7 +173,7 @@
 
       &:active {
         span {
-          color: #4496D7;
+          color: #4496d7;
         }
       }
     }
@@ -190,4 +190,31 @@
       color: #a9a9a9;
     }
   }
+}
+
+.menus {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+
+  div {
+    float: left;
+    width: 50%;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+    padding: 10px 0px;
+    background-color: #ffffff;
+  }
+
+  .unselected {
+    &:active {
+      background-color: #e8e8e8;
+    }
+  }
+
+  .selected {
+    background-color: #20c52d;
+    color: #ffffff;
+  }
+
 }

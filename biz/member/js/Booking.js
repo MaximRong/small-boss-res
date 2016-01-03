@@ -42,7 +42,12 @@ $(function () {
              success : function (ret) {
                  if("ok" == ret.result) {
                      window.location.href = context + "/member/subscribe/show";
+                 } else if("ex" == ret.result) {
+                     $.inputError(ret.msg);
+                 } else {
+                     $.inputError("预约异常，不可预约！");
                  }
+
              }
          });
     });

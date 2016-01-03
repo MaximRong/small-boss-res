@@ -359,3 +359,23 @@ input:focus {
 .booking-block .booking-btn:active {
   background-color: #60C559;
 }
+.menus {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+.menus div {
+  float: left;
+  width: 50%;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+  padding: 10px 0px;
+  background-color: #ffffff;
+}
+.menus .unselected:active {
+  background-color: #e8e8e8;
+}
+.menus .selected {
+  background-color: #20c52d;
+  color: #ffffff;
+}

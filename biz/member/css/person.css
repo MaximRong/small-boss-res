@@ -182,6 +182,9 @@ input:focus {
   border-color: transparent transparent #ffffff;
   top: 0;
 }
+.booking-list {
+  padding-bottom: 80px;
+}
 .booking-list .booking-item {
   padding: 20px 10px 15px;
   border-bottom: 1px dotted #a9a9a9;
@@ -248,11 +251,31 @@ input:focus {
   color: #5eb3d7;
 }
 .booking-list .booking-item .booking-operate:active span {
-  color: #4496D7;
+  color: #4496d7;
 }
 .booking-list .unused span {
   color: #000000;
 }
 .booking-list .invalid span {
   color: #a9a9a9;
+}
+.menus {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+.menus div {
+  float: left;
+  width: 50%;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+  padding: 10px 0px;
+  background-color: #ffffff;
+}
+.menus .unselected:active {
+  background-color: #e8e8e8;
+}
+.menus .selected {
+  background-color: #20c52d;
+  color: #ffffff;
 }

@@ -38,7 +38,7 @@ $(function () {
             },
             success: function (ret) {
                 if("ok" == ret.result) {
-                    window.location.href = context + "/member/subscribe/show";
+                    window.location.href = context + "/member/booking/show";
                 } else if("null" == ret.result) {
                     $.inputError("该手机号不存在");
                 } else {

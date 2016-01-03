@@ -111,7 +111,7 @@ $(function () {
             data: JSON.stringify(data),
             success: function (ret) {
                 if("ok" == ret.result) {
-                    window.location.href = context + "/merchant/member/show";
+                    window.location.href = context + "/member/booking/show";
                 } else {
                     $.inputError(ret.msg);
                 }
